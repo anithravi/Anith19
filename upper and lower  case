@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char c=sc.next().charAt(0);
+        if((c>='a' && c<='z'))
+        {
+            System.out.println("The Given Character "+c+" is Lower Case...");
+        }
+        else if(c>='A' && c<='Z')
+        {
+            System.out.println("The Given Character "+c+" is Upper Case...");
+        }
+        else if(c>='0' && c<='9')
+        {
+            System.out.println("The Given Character "+c+" is Number...");
+        }
+        else
+        {
+            System.out.println("The Given Character "+c+" is Symbol...");
+        }
+    }
+}
